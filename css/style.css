@@ -1,0 +1,338 @@
+/*** RESET ***/
+
+@font-face {
+    font-family: 'MavenProBlack';
+    src: url('fonts/Black/maven_pro_black-webfont.eot');
+    src: url('fonts/Black/maven_pro_black-webfont.eot?#iefix') format('eot'),
+         url('fonts/Black/maven_pro_black-webfont.woff') format('woff'),
+         url('fonts/Black/maven_pro_black-webfont.ttf') format('truetype'),
+         url('fonts/Black/maven_pro_black-webfont.svg#webfontXhB2DgBK') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MavenProBold';
+    src: url('fonts/Bold/maven_pro_bold-webfont.eot');
+    src: url('fonts/Bold/maven_pro_bold-webfont.eot?#iefix') format('eot'),
+         url('fonts/Bold/maven_pro_bold-webfont.woff') format('woff'),
+         url('fonts/Bold/maven_pro_bold-webfont.ttf') format('truetype'),
+         url('fonts/Bold/maven_pro_bold-webfont.svg#webfontNOU7iUTL') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MavenProRegular';
+    src: url('fonts/Regular/maven_pro_regular-webfont.eot');
+    src: url('fonts/Regular/maven_pro_regular-webfont.eot?#iefix') format('eot'),
+         url('fonts/Regular/maven_pro_regular-webfont.woff') format('woff'),
+         url('fonts/Regular/maven_pro_regular-webfont.ttf') format('truetype'),
+         url('fonts/Regular/maven_pro_regular-webfont.svg#webfontOM8fITNz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, hr, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-family: 'MavenProRegular';
+}
+body {
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+}
+*:focus {
+  outline: 1;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input, select {
+  vertical-align: middle;
+}
+
+
+/*** GLOBAL ***/
+
+html, body, .main_wrapper {
+	width: 100%;
+	background-color: #f3f3f3;
+}
+
+body {
+	position: relative;
+}
+
+	.preloader_overlay{
+		background: rgba(255,255,255,0.4);
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: fixed;
+		display: none;
+	}
+	
+		.loader_gif {
+			width: 40px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-left: -20px;
+			margin-top: -20px;
+		}
+
+	.navbar {
+		position: fixed;
+		right: 0;
+		left: 0;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		z-index: 5;
+	}
+	
+		.logo {
+			width: 130px;
+			height: 34px;
+			background: url('../images/logo.png');
+			display: inline-block;
+			margin: 20px 0px 20px 100px;
+		}
+		
+		.navbar ul {
+			min-height: 66px;
+			line-height: 66px;
+			font-family: 'MavenProRegular';
+			-webkit-font-smoothing: antialiased;
+			font-size: 18px;
+			position: relative;
+			left: 0;
+			display: block;
+			float: right;
+			margin: 0 250px 0 0;
+			list-style: none;
+			
+		}
+		
+		.navbar ul li {
+			float: left;
+			line-height: 20px;
+		}
+		
+		.navbar ul li a {
+			position: relative;
+			padding: 0px 10px;
+			line-height: 66px;
+			height: 66px;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 90%;
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		.navbar ul li a:hover {
+			color: #fd8e0b;
+			border-bottom-color: #fd8e0b;
+		}
+
+	.main_wrapper {
+		position: relative;
+	}
+
+	.top_content {
+		width: 100%;
+		text-align: center;
+		background: #fff;
+		border-bottom: 2px solid #dddddd;
+	}
+	
+		.welcome {
+			padding: 130px 0px 40px 0px;
+			width: 100%;
+			text-align: center;
+		}
+	
+		.top_content h1 {
+			color: #fd8e0b;
+			border-bottom: 2px solid #dddddd;
+			font-size: 2.5em;
+			width: 485px;
+			margin: 0px auto;
+		}
+		
+		.top_content p {
+			color: #8a8a8a;
+			margin: 20px auto;
+		}
+		
+		.top_content p strong {
+			font-family: 'MavenProBlack';
+		}
+
+	.main_content {
+		width: 100%;
+		text-align: center;
+	}
+	
+		.main_content p{
+			color: #a6a6a6;
+			margin: 20px auto;
+		}
+		
+		.submit_button {
+			border: none;
+			color: white;
+			padding: 5px 15px;
+			background-color: #fd8e0b;
+			border-radius: 5px;
+			cursor: pointer;
+			line-height: 18px;
+			font-style: normal;
+			font-size: 100%;
+			width: 150px;
+			margin:0px auto;
+		}
+		
+		.submit_button:hover {
+			background-color: #909090;
+		}
+		
+		.main_content .results {
+			display: none;
+		}
+		
+/** LOGIN **/
+
+#login {
+	padding: 30px;
+}
+
+	#login label {
+		color: #a6a6a6;
+	}
+
+	#login input {
+		width: 250px;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	#login input[type=submit]{
+		width: 80px;
+	}
+	
+#errors{
+	display: none;
+	color: #B41F36;
+}
+
+/** ADMIN **/
+
+#contestants {
+	width: 60%;
+	margin: 30px auto;
+}
+
+	#contestants thead {
+		border-bottom: solid black 2px;
+	}
+	
+	#contestants td {
+		padding: 5px;
+	}
+
+	table.tablesorter {
+		margin:10px 0pt 15px;
+		width: 100%;
+		text-align: left;
+	}
+	table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+		background-color: rgba(0,0,0,0);
+		padding: 10px;
+	}
+	table.tablesorter thead tr th.header {
+		background-image: url('../images/bg.gif');
+		background-repeat: no-repeat;
+		background-position: center right;
+		cursor: pointer;
+	}
+	table.tablesorter tbody td {
+		padding: 10px;
+		vertical-align: top;
+	}
+	table.tablesorter thead tr th.headerSortUp {
+		background-image: url('../images/asc.gif');
+	}
+	table.tablesorter thead tr th.headerSortDown {
+		background-image: url('../images/desc.gif');
+	}
+	table.tablesorter thead tr th.headerSortDown, table.tablesorter thead tr .headerSortUp {
+	background-color: rgba(0,0,0,0.1);
+	}
+	
+	
+/** TIME **/
+	
+	.am_clock, .pm_clock{
+		width:50%;
+		position: relative;
+	}
+	
+	.am_clock {
+		float: left;
+	}
+	
+	.pm_clock {
+		float: right;
+	}
+	
+	.am_clock img, .pm_clock img {
+		position: absolute;
+		width: 80%;
+		left:10%;
+		top: 100%;
+	}
+	
+	.am_clock h1, .pm_clock h1{
+		color: #fd8e0b;
+		border-bottom: 2px solid #dddddd;
+		font-size: 2.5em;
+		width: 485px;
+		margin: 0px auto;
+		
+	}
+	
+	
+
+
